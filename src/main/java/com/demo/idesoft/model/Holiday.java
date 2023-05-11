@@ -2,21 +2,21 @@ package com.demo.idesoft.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Holiday {
-    private Date date;
+    private LocalDate date;
     private String title;
     private String type;
     private Boolean inalienable;
     private String extra;
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 

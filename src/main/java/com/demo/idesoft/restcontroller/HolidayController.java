@@ -19,7 +19,6 @@ public class HolidayController {
 
     private static final Logger log = LoggerFactory.getLogger(HolidayController.class);
 
-
     private final HolidayService holidayService;
 
     public HolidayController(HolidayService holidayService) {
@@ -27,7 +26,6 @@ public class HolidayController {
     }
 
     @GetMapping(path = "/holidays")
-
     public ResponseEntity<?> getHolidays(@RequestParam(value = "type", required = false) String type) {
         log.info("Obteniendo holidays con type: {}", type);
 
